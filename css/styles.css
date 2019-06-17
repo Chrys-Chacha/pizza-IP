@@ -1,0 +1,116 @@
+/*****IMPORT FILES*********/
+@import url('bootstrap.css');
+@import url('fonts.css');
+
+
+.about{
+  background-image: url("https://i.pinimg.com/originals/c3/98/72/c3987208cb1d189a8d1bcfe48a871d9c.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  margin-top: 0rem;
+  background-size: cover;
+  width: 1200px;
+  height: 1000px;
+  color: aliceblue;
+  
+}
+  
+.about h4{
+  margin-top: 9rem;
+}
+  h1 {
+    text-align: center;
+    color: rgb(245, 26, 26);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-style: block;
+    text-align: center;
+    margin-top: 3px;
+    padding-top: 15px;
+  }
+  
+  h2 {
+    color: #0c2647;
+    text-align: left;
+  }
+  h3 {
+    color: #0c2647;
+    text-align: left;
+  }
+  .jumbotron {
+    color: #0c2647;
+    background-color: rgb(161, 216, 241);
+    font-family: 'Oswald', sans-serif;
+    display: flex;  
+  }
+  .well {
+    margin-top: 50px;
+    color: white;
+    background-color: #5d6b82;
+  }
+  .about{margin-top: 1px;
+    text-align: center; 
+  }
+  span{
+    color: rgb(245, 26, 26);
+  }
+  p {
+    text-align: center;
+    color: #0c2647;
+  }
+  
+  .btn {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-top: 35px;
+  }
+  #orderConfirmation {
+    display: none;
+    float: left;
+    text-align: left;
+  
+  }
+  #jumbotron1 {
+    background-color: rgb(161, 216, 241);
+    color: black;
+    margin: 1px;
+    padding: none;
+    height: 160px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h5{
+    font-size: 30px;
+    color: #0c2647;
+  }
+  .address{
+    text-align: left;
+    text-decoration-style: wavy;
+    margin-bottom: -2rem;
+  }
+  #jphoto{
+    width: 400px;
+    height: 200px;
+    padding-left: 100px;
+    float:right;
+
+  }
+  .locate{
+    text-align: left;
+  }
+  .location{
+    text-align: left;
+  }
+  .describe{
+    color:rgb(145, 61, 13);
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
