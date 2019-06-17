@@ -3,6 +3,11 @@ $(document).ready(function () {
   $(".choices").click(function () {
     $(this).next("div").slideToggle("slow");
   });
+  $("#formInput").submit(function () {
+    event.preventDefault();
+    var name = $("#sname").val()
+    $(".result").append("Thank you " + name + " your order will be delivered in an hour.");
+  });
 });
 
 function invoice() {
@@ -117,7 +122,10 @@ function invoice() {
   $("#totalprice").html(" $" + totalPrice + ".00");
 };
 //Feedback after submission of delivery details
-$(".formInput").submit(function(){
-  event.preventDefault();
-  var name = $("#name").val()
-  $(".result").append("Thank you "+ name+ "your order will be delivered in an hour.");});
+// $(document).ready(function () {
+//   // $(".formInput").submit(function () {
+//   //   event.preventDefault();
+//   //   var name = $("#sname").val()
+//   //   $(".result").append("Thank you " + name + "your order will be delivered in an hour.");
+//   // });
+// });

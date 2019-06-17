@@ -5,7 +5,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="css/fonts.css" rel="stylesheet">
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <title>Pizza Haven</title>
 </head>
@@ -34,7 +38,7 @@
             <div class="col-sm-6 col-md-5">
               <div class="contact">
                 <fieldset class="name-input">
-                  <input style="color:black;" type="text" id="name" placeholder="Name" size="50">
+                  <input style="color:black;" type="text" id="sname" placeholder="Name" size="50">
                 </fieldset>
                 <fieldset class="email-input">
                   <input style="color:black;" type="email" id="email" placeholder="E-mail" size="50">
@@ -47,7 +51,8 @@
                     cols="50"></textarea>
                 </fieldset>
                 <fieldset class="send-message">
-                  <input style="color:black;" type="submit" id="send" value="Submit Message"><br><br>
+                  <!-- <input style="color:black;" type="submit" id="send" value="Submit Message"><br><br> -->
+                <button type="submit"  id="send">Submit Message</button>
                 </fieldset>
               </div>
             </div>
