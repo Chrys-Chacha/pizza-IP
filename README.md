@@ -1,12 +1,12 @@
 # Piza Haven
-#### This is a landing page website for Delani Studio that helps people establish what they do, the nature of services, design and product development processes. The website also demonstrates some of the previous jobs from Delani Studio and some social media pages where people can get to learn about the studio more. 10th June 2019
+#### This is a landing page website for Pizza Haven that helps people establish what they do, the types of Pizza on offer and customers can make their order online. 17th June 2019
 #### By **Chrys Chacha**
 
 ## Description
-The website helps one to learn about some of the services offered in Delani Studio, the Designs,products and the product management prrocess. The visitors to the website can also see some of the previous jobs done from the portfolio and also visit the social media pages through the social media links. Visitors can also contact the Studio through a contact form incase of any problem, concern or making an order.
+The website helps one to learn about some of the types of Pizzas offered in Pizza Haven. The website also helps the customers to make orders online and choose their mode of delivery and give instructions on the preferred location. When the customer submits an oder, they are able to see the total cost of their selcted package.
 ## Setup/Installation Requirements
-* git clone (https://github.com/Chrys-Chacha/delani-studio.git)
-* cd delani-studio
+* git clone (https://github.com/Chrys-Chacha/pizza-IP.git)
+* cd pizza-IP
 * Open index.html to see the HTML code
 * Open script.js to see the JavaScript code
 * Open styles.css to see the css code
