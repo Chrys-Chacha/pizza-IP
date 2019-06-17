@@ -5,61 +5,174 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <title>Pizza Haven</title>
 </head>
+
 <body>
-    <div class="container">
-      <div class="jumbotron">
-        <a href="index.html">
-          <h1>Pizza Haven</h1>
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        <h4>Home and Office Delivery Service</h4>
-      </div>
-
-
-
-
-
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-    
-            <div class="card">
-              <div class="card-body">Small Pizza</div>
-              <img src="images/small.jpg" alt="Small Pizza">
-              <p class="describe">Our small pizzas have 8 slices and will definitely satisfy one person. It's going to be a
-                little 'iffy' for
-                2 though.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">Medium Pizza</div>
-            <img src="images/medium.jpg" alt="Medium Pizza">
-            <p class="describe">Our medium pizzas have 16 slices and will definitely satisfy 2 if not 3 people. 16 slices
-              is a lot of pizza
-              for 2.</p>
+  <div class="container">
+    <div class="jumbotron">
+      <a href="index.html">
+        <h1>Pizza Haven</h1>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br><br>
+      <h4>Home and Office Delivery Service</h4>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Our Menu</h1>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div id="sizetable">
+          <h3 class="choices">Sizes:</h3>
+          <div class="menu-size">
+            <input type="checkbox" name="size" value="Small"> Small<br>
+            <input type="checkbox" name="size" value="Medium"> Medium<br>
+            <input type="checkbox" name="size" value="Large"> Large<br>
           </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">Large Pizza</div>
-              <img src="images/large.jpg" alt="Large Pizza">
-              <p class="describe">This glorious monster pizza will feed 3+ hungry humans, it has 16 slices like our medium
-                pizza but they are
-                larger slices.</p>
-            </div>
-       
+      </div>
+      <br>
+      <div class="col-md-4">
+        <div id="cheesetable">
+          <h3 class="choices">Cheese:</h3>
+          <div class="menu-cheese">
+            <input type="checkbox" name="cheese" value="No"> No Cheese<br>
+            <input type="checkbox" name="cheese" value="Regular"> Regular<br>
+            <input type="checkbox" name="cheese" value="Extra"> Extra Cheese<br>
           </div>
         </div>
-       
       </div>
-    
-    </body>
-    </html>
+      <br>
+      <!-- Select crust. -->
+      <div class="col-md-4">
+        <div id="crusttable">
+          <h3 class="choices">Crusts:</h3>
+          <div class="menu-crust">
+            <input type="checkbox" name="crust" value="Plain"> Crispy<br>
+            <input type="checkbox" name="crust" value="Garlic Butter"> Stuffed<br>
+            <input type="checkbox" name="crust" value="Cheese-Stuffed"> Glutten-free<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Select sauce. -->
+    <div class="row">
+      <div class="col-md-4">
+        <div id="saucetable">
+          <h3 class="choices">Sauce:</h3>
+          <div class="menu-sauce">
+            <input type="checkbox" name="sauce" value="Marinara"> Marinara Sauce<br>
+            <input type="checkbox" name="sauce" value="White"> White Sauce<br>
+            <input type="checkbox" name="sauce" value="No"> No Sauce<br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- Select meat. -->
+      <div class="col-md-4">
+        <div id="meattable">
+          <h3 class="choices">Meat:</h3>
+          <div class="menu-meat">
+            <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+            <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4">
+        <div id="vegtable">
+          <h3 class="choices">Veggies:</h3>
+          <div class="menu-veggie">
+            <input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+            <input type="checkbox" name="veg" value="Onions"> Onions<br>
+            <input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  &nbsp;&nbsp;
+  <button id="calc" class="btn-primary btn-lg" type="submit" onclick="invoice()">Place Order</button>
+  <br>
+  <h3 class="total-cost">Invoice:</h3>
+  <br><table class="pizza" style="width: 50%;" border="2" cellpadding="5">
+    <tbody>
+      <tr>
+        <td id="size"></td>
+        <td id="sizeprice"></td>
+      </tr>
+      <tr>
+        <td id="crust"></td>
+        <td id="crustprice"></td>
+      </tr>
+      <tr>
+        <td id="cheese"></td>
+        <td id="cheeseprice"></td>
+      </tr>
+      <tr>
+        <td id="sauce"></td>
+        <td id="sauceprice"></td>
+      </tr>
+      <tr>
+        <td id="meat"></td>
+        <td id="meatprice"></td>
+      </tr>
+      <tr>
+        <td id="veg"></td>
+        <td id="vegprice"></td>
+      </tr>
+      <tr>
+        <td><strong>TOTAL PRICE:</strong></td>
+        <td id="totalprice"></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  </div>
+  <br><br>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="contact.html" class="btn-primary btn-lg">Need home and office
+      delivery?</a></button>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">Small Pizza</div>
+          <img src="images/small.jpg" alt="Small Pizza">
+          <p class="describe">Our small pizzas have 8 slices and will definitely satisfy one person. It's going to be a
+            little 'iffy' for
+            2 though.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">Medium Pizza</div>
+          <img src="images/medium.jpg" alt="Medium Pizza">
+          <p class="describe">Our medium pizzas have 16 slices and will definitely satisfy 2 if not 3 people. 16 slices
+            is a lot of pizza
+            for 2.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">Large Pizza</div>
+          <img src="images/large.jpg" alt="Large Pizza">
+          <p class="describe">This glorious monster pizza will feed 3+ hungry humans, it has 16 slices like our medium
+            pizza but they are
+            larger slices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
