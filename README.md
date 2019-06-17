@@ -3,7 +3,7 @@
 #### By **Chrys Chacha**
 
 ## Description
-The website helps one to learn about some of the types of Pizzas offered in Pizza Haven. The website also helps the customers to make orders online and choose their mode of delivery and give instructions on the preferred location. When the customer submits an oder, they are able to see the total cost of their selcted package.
+The website helps one to learn about some of the types of Pizzas offered in Pizza Haven. The website also helps the customers to make orders online, choose their mode of delivery and give instructions on the preferred location. When the customer place an oder, they are able to see the total cost of their selected package.
 ## Setup/Installation Requirements
 * git clone (https://github.com/Chrys-Chacha/pizza-IP.git)
 * cd pizza-IP
@@ -16,11 +16,9 @@ The website helps one to learn about some of the types of Pizzas offered in Pizz
 
 ## Behaviour Driven Development
 |Behaviour|Input|Output|
-|:--------|:---:|-----:|
-|To see the perevious projects in portfolio|Moving the mouse to any portifolio image|Project number appears|
-|To see what we do|Single click on the what we do icons|Shows the description of what we do|
-|To hide what we do| Double click on the what we do icon|Hides the desciption of what we do.|
-|To contact Delani Studio| Type Name and email|Pop up with 'Thank you' and the inputed name shows|
+|:--------|:----|:------|
+|Giving total cost of pizza choice|Check boxes for prefered size and topping|The total amount of the package selected shows|
+|Pop up for customer to select delivery|Type location, address and contact|Shows the order has been received and is being processed| 
 
 ## Known Bugs
 The website opens on all devices.
