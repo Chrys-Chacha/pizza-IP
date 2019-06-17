@@ -3,6 +3,8 @@ $(document).ready(function () {
   $(".choices").click(function () {
     $(this).next("div").slideToggle("slow");
   });
+
+  //Feedback after submission of delivery details
   $("#formInput").submit(function () {
     event.preventDefault();
     var name = $("#sname").val()
@@ -121,11 +123,3 @@ function invoice() {
   $("#vegprice").html("+" + vegPrice + ".00");
   $("#totalprice").html(" $" + totalPrice + ".00");
 };
-//Feedback after submission of delivery details
-// $(document).ready(function () {
-//   // $(".formInput").submit(function () {
-//   //   event.preventDefault();
-//   //   var name = $("#sname").val()
-//   //   $(".result").append("Thank you " + name + "your order will be delivered in an hour.");
-//   // });
-// });
